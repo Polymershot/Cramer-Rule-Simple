@@ -1,2 +1,1 @@
-# Starter
-Test
+#This is a starter repository
