@@ -1,17 +1,17 @@
 # Title of Repository
-# Content
+## Content
 - Triple
 - Double
 - Single
-# Installation
+## Installation
 Windows
 - filler
 - filler
-# Usage
+## Usage
 - filler
-# Authors
+## Authors
 - filler
-# Contact
+## Contact
 - filler
-# License
+## License
 - filler
