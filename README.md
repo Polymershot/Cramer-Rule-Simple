@@ -1,5 +1,5 @@
 # Title of Repository
 # Content
--Triple
--Double
--Single
+- Triple
+- Double
+- Single
