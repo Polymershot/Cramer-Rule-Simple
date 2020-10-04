@@ -15,7 +15,7 @@ Windows
 ## Usage/Test
 #### First:
 > import cramersrule
-To test if it works write the line below
+#### Test:
 > print(makedeterminant([[12,3,15],[2,-3,13]])) 
 #### Result:
 > x = 2.0 y = -3.0
