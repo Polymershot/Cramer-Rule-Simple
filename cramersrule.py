@@ -1,6 +1,10 @@
+import copy as copy
+
 def determinant(array):
+    # if it is a 2x2 matrix
     if len(array) == 2:
         return (array[0][0] * array[1][1]) - (array[0][1] * array[1][0])
+    # if it is a 3x3 matrix
     else:
         a = array[0][0]
         b = array[0][1]
@@ -10,34 +14,42 @@ def determinant(array):
         ac = c * ((array[1][0] * array[2][1]) - (array[2][0] * array[1][1]))
         return (ax - ab) + ac
 
-def makedeterminant(arr):
+def cramers_rule(arr):
+    # making copies for each determinant and gettind rid of last column
     copyarr = []
     variable = []
+    last_col = iter(variable)
     for i in range(len(arr)):
         y = arr[i].pop(len(arr[i])-1)
         variable.append(y)
-    copyofarr = copy.deepcopy(arr)
+    copyofarr =  copy.deepcopy(arr)
     copyofarr2 = copy.deepcopy(arr)
     copyofarr3 = copy.deepcopy(arr)
+    
+    # calculating dx 
     d = determinant(arr)
-    dx = copyofarr.copy()
-    values = iter(variable)
+    d1 = copyofarr
     for i in range(len(arr)):
-        dx[i][0] = next(values)
-    dxx = determinant(dx)
-    dy = copyofarr2
-    values2 = iter(variable)
+        d1[i][0] = next(values)
+    dx = determinant(d1)
+    
+    #calculating dy
+    d2 = copyofarr2
     for i in range(len(arr)):
-        dy[i][1] = next(values2)
-    dyy = determinant(dy)
+        d2[i][1] = next(values2)
+    dy = determinant(d2)
+    
+    # check if it is a 2x2 matrix
     if len(arr[0]) == 2:
         return 'x = ' + str(dxx/d) + ' y = ' + str(dyy/d)
-    dz = copyofarr3
-    values3 = iter(variable)
+    
+    # calculating dz
+    d3 = copyofarr3
     for i in range(len(arr)):
-        dz[i][2] = next(values3)
-    dzz = determinant(dz)
-    return 'x = ' + str(dxx/d) + ' y = ' + str(dyy/d) + ' z = ' + str(dzz/d)
+        d3[i][2] = next(values3)
+    dz = determinant(d3)
+    
+    return 'x = ' + str(dx/d) + ' y = ' + str(dy/d) + ' z = ' + str(dz/d)
 
 
 
