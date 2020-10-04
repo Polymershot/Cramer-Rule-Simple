@@ -13,6 +13,8 @@ Windows
 > git clone https://github.com/Polymershot/Cramer-Rule-Simple.git
 
 ## Usage/Test
+First:
+> import cramersrule
 To test if it works write the line below
 > print(makedeterminant([[12,3,15],[2,-3,13]])) 
 #### Result:
