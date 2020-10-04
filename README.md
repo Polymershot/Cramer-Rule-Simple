@@ -16,7 +16,7 @@ Windows
 #### First:
 > import cramersrule
 #### Test:
-> print(makedeterminant([[12,3,15],[2,-3,13]])) 
+> print(cramers_rule([[12,3,15],[2,-3,13]])) 
 #### Result:
 > x = 2.0 y = -3.0
 ## Authors
