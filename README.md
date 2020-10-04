@@ -14,7 +14,7 @@ Windows
 
 ## Usage/Test
 To test if it works write the line below
-> print(makedeterminant([[12,3,15],[2,-3,13]]))
+> print(makedeterminant([[12,3,15],[2,-3,13]])) >
 You should get:
 > x = 2.0 y = -3.0
 ## Authors
