@@ -10,7 +10,7 @@ This implementation of Cramer's rule is a simple one which doesn't use Numpy. An
 Windows
 - Install Git, Python3.6+ and web browser (Google Chrome or Firefox).
 - Download this repository or run following command in the command prompt:
-> https://github.com/Polymershot/Cramer-Rule-Simple.git
+> git clone https://github.com/Polymershot/Cramer-Rule-Simple.git
 
 ## Usage/Test
 To test if it works write the line below
