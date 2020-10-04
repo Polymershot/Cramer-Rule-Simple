@@ -18,7 +18,6 @@ def cramers_rule(arr):
     # making copies for each determinant and gettind rid of last column
     copyarr = []
     variable = []
-    last_col = iter(variable)
     for i in range(len(arr)):
         y = arr[i].pop(len(arr[i])-1)
         variable.append(y)
@@ -30,23 +29,23 @@ def cramers_rule(arr):
     d = determinant(arr)
     d1 = copyofarr
     for i in range(len(arr)):
-        d1[i][0] = next(values)
+        d1[i][0] = variable[i]
     dx = determinant(d1)
     
     #calculating dy
     d2 = copyofarr2
     for i in range(len(arr)):
-        d2[i][1] = next(values2)
+        d2[i][1] = variable[i]
     dy = determinant(d2)
     
     # check if it is a 2x2 matrix
     if len(arr[0]) == 2:
-        return 'x = ' + str(dxx/d) + ' y = ' + str(dyy/d)
+        return 'x = ' + str(dx/d) + ' y = ' + str(dy/d)
     
     # calculating dz
     d3 = copyofarr3
     for i in range(len(arr)):
-        d3[i][2] = next(values3)
+        d3[i][2] = variable[i]
     dz = determinant(d3)
     
     return 'x = ' + str(dx/d) + ' y = ' + str(dy/d) + ' z = ' + str(dz/d)
