@@ -54,4 +54,4 @@ def cramers_rule(arr):
 
 
 
-print(makedeterminant([[12,3,15],[2,-3,13]]))
+print(cramers_rule([[12,3,15],[2,-3,13]]))
