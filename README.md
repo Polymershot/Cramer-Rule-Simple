@@ -18,7 +18,7 @@ Windows
 - Install Git, Python3.6+ and web browser (Google Chrome or Firefox).
 - Download this repository or run following command in the command prompt:
 > git clone https://github.com/Polymershot/Nxn-Matrix-Solver.git
-#### Must have numpy and copy module installed
+- Must have numpy and copy module installed
 ## Usage/Test
 ### Nxn v1.
 #### Expected Output:
