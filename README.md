@@ -3,10 +3,10 @@ Version 1 of Nxn Matrix Solver was supposed to be a simple implementation of Cra
 #### Ex in code:
 [[1,2,1,-1],[3,2,4,4],[4,4,3,4],[2,0,1,5]],[[5,16,22,15]]
 #### Ex in math:
-a + 2b + c - d = 5
-3a + 2b + 4c + 4d = 16
-4a + 4b + 3c + 4d = 22
-2a + c + 5d = 15
+a + 2b + c - d = 5  
+3a + 2b + 4c + 4d = 16  
+4a + 4b + 3c + 4d = 22  
+2a + c + 5d = 15  
 ## Content
 - Installation
 - Usage
