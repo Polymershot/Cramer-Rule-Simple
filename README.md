@@ -18,9 +18,9 @@ Windows
 ### Nxn v2. 
 #### Expected Output
 > Variable 1 = 16.0
-  Variable 2 = -6.0
-  Variable 3 = -2.0
-  Variable 4 = -3.0
+> Variable 2 = -6.0
+> Variable 3 = -2.0
+> Variable 4 = -3.0
 ## Authors
 - Randy Neou
 ## Contact
