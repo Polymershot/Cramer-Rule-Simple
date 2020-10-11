@@ -1,5 +1,11 @@
 # Nxn Matrix Solver
-This implementation of Cramer's rule is a simple one which doesn't use Numpy. An updated version using Numpy might be created. Only works for 2x2 and 3x3 matrix for a system of equations. For example, if you had the equation '2x + 3y + 2z = 5', you would need to input [2,3,2,5]
+Version 1 of Nxn Matrix Solver was supposed to be a simple implementation of Cramer's rule for a 2x2 or 3x3 matrix but I created a 2nd version which should solve Nxn dimensional matrices that aren't ridiculously large. Input must be encapsalated with brackets. 
+#### Ex:
+[[1,2,1,-1],[3,2,4,4],[4,4,3,4],[2,0,1,5]],[[5,16,22,15]]
+a + 2b + c - d = 5
+3a + 2b + 4c + 4d = 16
+4a + 4b + 3c + 4d = 22
+2a + c + 5d = 15
 ## Content
 - Installation
 - Usage
@@ -11,12 +17,13 @@ Windows
 - Install Git, Python3.6+ and web browser (Google Chrome or Firefox).
 - Download this repository or run following command in the command prompt:
 > git clone https://github.com/Polymershot/Nxn-Matrix-Solver.git
+#### Must have numpy and copy module installed
 ## Usage/Test
 ### Nxn v1.
-#### Expected Output
+#### Expected Output:
 > x = 2.0 y = -3.0
 ### Nxn v2. 
-#### Expected Output
+#### Expected Output:
 > Variable 1 = 16.0
 > Variable 2 = -6.0
 > Variable 3 = -2.0
