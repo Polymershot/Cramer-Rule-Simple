@@ -1,5 +1,5 @@
 # Nxn Matrix Solver
-Version 1 of Nxn Matrix Solver was supposed to be a simple implementation of Cramer's rule for a 2x2 or 3x3 matrix but I created a 2nd version which should solve Nxn dimensional matrices that aren't ridiculously large. Input must be encapsalated with brackets. This is meant to solve a system of equations.
+Version 1 of Nxn Matrix Solver was supposed to be a simple implementation of Cramer's rule for a 2x2 or 3x3 matrix but I created a 2nd version which should solve Nxn dimensional matrices that aren't ridiculously large. Input must be encapsalated with brackets. This is meant to solve a system of equations.Input must be a pseudo-augmented matrix.
 #### Ex in code:
 [[1,2,1,-1],[3,2,4,4],[4,4,3,4],[2,0,1,5]],[[5,16,22,15]]
 #### Ex in math:
