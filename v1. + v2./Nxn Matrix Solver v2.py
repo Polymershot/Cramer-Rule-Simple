@@ -18,7 +18,7 @@ def nxn_matrix_solver(leftarr,rightarr):
     # finding dx,dy,dz...
     for i in range((np.shape(leftarr)[0])):
         temp = leftcopy[:,i]
-        leftarr[:,i] = right_vector[:,0]
+        leftarr[:,i] = vector_col[:,0]
         variables[i] += np.linalg.det(leftarr)
         leftarr[:,i] = temp
 
